@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        template
+    </title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://kit.fontawesome.com/b9ba9bf89a.js" crossorigin="anonymous" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="left-container">
+            <img src="assets/logo.png" alt="logo">
+            <ul class="navigation">
+                <li><a href="">home</a></li>
+                <li><a href="">topics</a></li>
+                <li><a href="">how it works</a></li>
+                <li><a href="">fads</a></li>
+                <li><a href="">contact</a></li>
+                <li class="dropdown-container">pages <i class="fa-solid fa-chevron-down"></i>
+                    <ul class="dropdown">
+                        <li>movies</li>
+                        <li>series</li>
+                        <li>anime</li>
+                        <li>lorem</li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-circle-user"></i>
+
+    </nav>
+
+
+    <main>
+
+        <h1> discover. learn. enjoy</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="" id="" placeholder="search ...">
+            <div></div>
+            <button>submit</button>
+        </div>
+    </main>
+    <script>
+        const nav=document.getElementsByTagName('nav')[0]
+        window.addEventListener('scroll',function(){
+            if(scrollY>50){
+                nav.style.backgroundColor='red'
+
+            }
+
+            else{
+                nav.style.backgroundColor='transparent'
+            }
+
+        })
+    </script>
+</body>
+
+
+</html>

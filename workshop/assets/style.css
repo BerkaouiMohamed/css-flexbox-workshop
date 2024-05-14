@@ -1,0 +1,126 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+  font-family: "Ubuntu Sans", sans-serif;
+  height: 300vh;
+}
+nav{
+  width: 100%;
+position: fixed;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+border-bottom: 1px solid  rgba(136, 136, 136, 0.555) ;
+  align-items: center;
+  color: white;
+z-index: 10000000;
+
+
+}
+.left-container{
+  display: flex;
+  gap:120px;
+  align-items: center;
+}
+nav img{
+  width: 55px;
+}
+nav .navigation{
+display: flex;
+gap: 33px;
+list-style: none;
+text-transform: uppercase;
+
+}
+.dropdown{
+  display: none;
+}
+
+nav>i{
+  font-size: 30px;
+  color: white;
+}
+
+main{
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(to bottom left,#7edaff,#3344ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+main h1{
+  color: white;
+  font-size: 4rem ;
+  text-transform: capitalize;
+}
+main p{
+  color: rgb(18, 0, 97);
+  font-size: 1.2rem;
+  font-weight: 300;
+
+}
+.search{
+  width: 500px;
+  height: 45px;
+  padding:10px 5px 10px 20px;
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  border-radius: 70px;
+  gap: 5px;
+  position: relative;
+  
+  
+}
+.search input{
+  position: relative;
+  height:35px ;
+  border: none;
+  width:400px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  z-index: 2;
+}
+.search input:focus{
+  border: none;
+  outline: none;
+}
+.search div{
+  width:500px ;
+  height: inherit;
+  background-color: transparent;
+  z-index: 0;
+  border: 4px solid transparent;
+  position: absolute;
+  border-radius: 70px;
+  left: 0;
+}
+
+.search input:focus+div{
+
+  border: 4px solid rgb(157, 255, 234) ;
+  outline: 4px solid rgb(89, 86, 255);;
+
+} 
+.search button{
+  position: relative;
+  border-radius: 35px;
+  height: 35px;
+  background-color: #7edaff;
+  width: 100px;
+  border: none;
+  color: white;
+  z-index: 2;
+}
